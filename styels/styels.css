@@ -103,6 +103,9 @@ main{
     color: rgb(19, 19, 19);
 
 }
+.tems{
+    align-items: center;
+}
 .colour-3{
     color: rgb(255, 144, 14);
 
@@ -112,6 +115,46 @@ main{
     font-weight: 400;
     font-size: 1rem;
 }
+
+/* fact section */
+
+.fact-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    /* height: 220px;
+    width: 220px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.some-fact-title{
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+}
+.some-fact-discription{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+.same-tiile{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+}
+.same-discription{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+
+
 /* responsive media quari */
 
 @media screen and (max-width: 576px) {
@@ -131,5 +174,34 @@ main{
     .our-fiturs-content{
         text-align: center;
     }
+    .fact-card{
+        
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .some-fact-title{
+        text-align: center;
+    }
+    .some-fact-discription{
+        text-align: center;
+        margin-left: 15px;
+    }
+    .card{
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    
+}
+
+/* mituam divice */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .tems{
+        flex-direction: column;
+    }
+   .our-fiturs-content{
+    text-align: center;
+   }
     
 }
