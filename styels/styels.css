@@ -8,3 +8,80 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* header section */
+.header-bg{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.nav-bar, .banner{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.diplay-flex{
+    display: flex;
+}
+
+.navbar-item{
+    list-style: none;
+    margin-left: 30px;
+}
+.navbar-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content{
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+}
+.banner-content{
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner img{
+    width: 100%;
+}
+.banner-title{
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+
+}
+
+.banner-discription{
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+.banner-button{
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+
+}
+
+/* responsive media quari */
+
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .navbar-links{
+        flex-direction: column;
+    }
+    
+}
